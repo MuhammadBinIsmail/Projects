@@ -17,11 +17,11 @@ body {
 h1 {
     font-size: 30px;
     font-weight: 700;
-    padding-bottom: 2rem;
     color: #f89a02;
+    padding-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 80px;
+    /* margin-top: 6px; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .box {

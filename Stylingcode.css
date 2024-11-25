@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-shadow: #262a2f;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #0556eb, #f4a261);
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+}  
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #f89a02;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.box {
+    direction: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    /* top: 25%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin: 1.5rem auto;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.container p{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #75bd3b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.container input{
+    width: 100%;
+    height: 50px;
+    border: 3px solid #494eea;
+    outline: none;
+    padding: 10px;
+    margin: 15px 0 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+.container button{
+    width: 100%;
+    height: 50px;
+    background: #75bd3b;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(76, 76, 250, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+a#downloadLink button {
+    width: 100%;
+    height: 50px;
+    background: #386af5; /* Different color for the download button */
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(79, 132, 230, 0.3);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+#imgBox{
+    width: 200px;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    margin: 20px auto;
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 3px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-4px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
